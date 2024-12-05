@@ -1,24 +1,15 @@
-import { redirect, useNavigate } from 'react-router-dom'
-import SampleBar from './SampleBar'
-import MainHeader from '../../ui/headers/MainHeader'
+import BarAndContainer from '../../ui/layout/sideBar/BarAndContainer'
 import SectionOne from './sections/SectionOne'
 import SectionTwo from './sections/SectionTwo'
 import './styles/AdminPageUI.css'
 
 
 export default function AdminPageUI() {
-    const navigate = useNavigate()
-    function navigateTo(path) {
-        navigate(path)
-    }
-
     return (
-        <>
-            <SampleBar />
-            <MainHeader />
+        <BarAndContainer>
             <SectionOne />
             <SectionTwo sectionTitle={"Estadísticos básicos"} />
             <SectionTwo sectionTitle={"Estadísticos básicos"} />
-        </>
+        </BarAndContainer>
     )
 }

@@ -56,6 +56,10 @@ input[type="number"] {
 }
 
 @media (max-width: 869px) {
+	.MobileDevice__hidden {
+		display: none;
+	}
+
 	.responsiveNavButton {
 		display: block;
 	}

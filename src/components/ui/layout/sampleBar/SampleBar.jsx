@@ -1,4 +1,4 @@
-import './styles/AdminPageUI.css'
+import './SampleBar.css'
 
 export default function SampleBar() {
     return (
