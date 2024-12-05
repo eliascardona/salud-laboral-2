@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.Font__medium {
+	font-weight: 500;
+}
+
+.Font__bold {
+	font-weight: 700;
+}
+
+.UAA__colorAzul {
+	color: rgb(14, 58, 148);
+    /* el color tal vez sea util a futuro */
+}

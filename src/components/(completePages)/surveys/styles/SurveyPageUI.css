@@ -1,0 +1,26 @@
+.Survey__grid {
+    width: 100%;
+    height: 99vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.Survey__col {
+    width: 90%;
+    display: grid;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    border-right: 1px solid #6a6a6a;
+}
+
+.Survey__col > input {
+    width: 50%;
+}
+
+.Survey__columnOne {
+    grid-template-rows: 50% 50%;
+}
+
+.Survey__columnN {
+    grid-template-rows: 15% 85%;
+}
