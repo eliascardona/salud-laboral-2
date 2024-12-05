@@ -46,6 +46,11 @@ const privateUseFetch = async (params, loadingCB, payloadCB, controller) => {
       loadingCB(false)
       console.log('Operaciones internas de React Effect han terminado')
     }
+  } else {
+    payloadCB({
+      effectStatus: 'rejected',
+      message: 'no has pasado los parametros correctos',
+    })
   }
 }
 
