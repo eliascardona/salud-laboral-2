@@ -24,7 +24,6 @@ export default function Page() {
 	return (
 		<div className="body">
 			<MainHeader />
-			<SideNavbar />
 			<Routes>
 				<Route
 					path="*"

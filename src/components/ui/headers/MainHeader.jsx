@@ -1,40 +1,52 @@
-import { Link } from 'react-router-dom'
-import './mainHeader.css'
+import { useState } from "react";
+import NavbarActivator from "../navigation/sidebar/NavbarActivator.jsx";
+import SideNavbar from "../navigation/sidebar/SideNavbar.jsx";
+import "./mainHeader.css";
 
 export default function MainHeader() {
+	const [isModalOpen, setModalToOpen] = useState(false);
 	return (
-		<div className='MainHeader__navCtn'>
-			<div className='MainHeader__navBody'>
-
+		<div className="MainHeader__navCtn">
+			<div className="MainHeader__navBody">
 				<span>
-					<Link to="/" className='MainHeader__link'>
+					<a href="/" className="MainHeader__link">
 						inicio
-					</Link>
+					</a>
 				</span>
-				{/*    navigation link   */}
+				{/*    navigation links   */}
 				<span>
-					<Link to="/encuestas" className='MainHeader__link'>
+					<a href="/encuestas" className="MainHeader__link">
 						encuestas
-					</Link>
+					</a>
 				</span>
 				<span>
-					<Link to="/crear-encuestas" className='MainHeader__link'>
+					<a href="/crear-encuestas" className="MainHeader__link">
 						iniciar encuesta
-					</Link>
+					</a>
 				</span>
 				<span>
-					<Link to="/signUp" className='MainHeader__link'>
+					<a href="/signUp" className="MainHeader__link">
 						crear cuenta
-					</Link>
+					</a>
 				</span>
 				<span>
-					<Link to="/signIn" className='MainHeader__link'>
+					<a href="/signIn" className="MainHeader__link">
 						iniciar sesión
-					</Link>
+					</a>
 				</span>
-
-
+				{/*  Auxiliar items  */}
+				<span style={{ visibility: "hidden" }}></span>
+				<span className="responsiveNavButton">
+					<NavbarActivator
+						isModalOpen={isModalOpen}
+						setModalToOpen={setModalToOpen}
+					/>
+					<SideNavbar
+						isModalOpen={isModalOpen}
+						setModalToOpen={setModalToOpen}
+					/>
+				</span>
 			</div>
 		</div>
-	)
+	);
 }
