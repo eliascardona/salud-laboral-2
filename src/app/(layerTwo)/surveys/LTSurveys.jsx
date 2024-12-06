@@ -1,7 +1,7 @@
 import SurveyPageUI from "../../../components/(completePages)/surveys/SurveyPageUI";
 
-export default function LTSurveys({ trustedData }) {
+export default function LTSurveys() {
     return (
-        <SurveyPageUI trustedData={trustedData} />
+        <SurveyPageUI />
     )
 }

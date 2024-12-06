@@ -14,7 +14,7 @@ export default function RoundCard() {
                     </div>
                 </div>
                 <button className="Prueba__extra-btn">
-                    <FaEllipsisV />
+                    <hr />
                 </button>
             </div>
             <div className="Prueba__card-content Prueba__job-card">
@@ -37,11 +37,11 @@ export default function RoundCard() {
                     <span>Hourly</span>
                 </div>
                 <div className="Prueba__location">
-                    <FaMapMarkerAlt />
+                    <hr />
                     <span>Pennsylvania, USA</span>
                 </div>
                 <div className="Prueba__date">
-                    <FaClock />
+                    <hr />
                     <span>2 days ago</span>
                 </div>
                 <button className="Prueba__apply-btn">Apply</button>

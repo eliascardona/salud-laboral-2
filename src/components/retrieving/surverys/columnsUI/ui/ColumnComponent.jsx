@@ -1,21 +1,9 @@
-import CommonCard from '../../../../ui/commonUI/eliasCard/CommonCard'
+import RoundCard from '../../roundsUI/RoundCard'
 
-export default function ColumnComponent({ item, querystringModifier }) {
+export default function ColumnComponent() {
     return (
         <>
-            <CommonCard onCardClick={querystringModifier}>
-                <>
-                    {
-                        item && (
-                            <span>
-                                <pre>
-                                    estado heredaro{"\t"}{JSON.stringify({vv:item})}
-                                </pre>
-                            </span>
-                        )
-                    }
-                </>
-            </CommonCard>
+            <RoundCard />
         </>
     )
 }
