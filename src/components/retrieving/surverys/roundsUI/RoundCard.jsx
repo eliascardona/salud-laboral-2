@@ -1,51 +1,30 @@
-export default function RoundCard() {
+import './RoundCard.css'
+
+export default function RoundCard({ nombre, direccion, grupo_id }) {
     return (
-        <div className="Prueba__card">
-            <div className="Prueba__card-header">
-                <div className="Prueba__header-left">
-                    <img
-                        src="https://via.placeholder.com/40?text=J001"
-                        alt="Job Logo"
-                        className="Prueba__main-logo"
-                    />
+        < div className="Prueba__card" >
+            <div className="Prueba__card__internalContainer">
+                <div className="Prueba__card-header">
                     <div className="Prueba__title-container">
-                        <div className="Prueba__title">Google LLC</div>
-                        <div className="Prueba__subtitle">Sr. UI Designer</div>
+                        <div className="Prueba__title">{nombre}</div>
+                        <div className="Prueba__subtitle">{direccion}</div>
+                    </div>
+                    <div className="Prueba__title-container">
+                        <div className="Prueba__subtitle">{"06-DIC-2024"}</div>
                     </div>
                 </div>
-                <button className="Prueba__extra-btn">
-                    <hr />
-                </button>
+                <div style={{display:'grid',padding:'0 0 0 1rem'}}>
+                    <div>
+                        <p>
+                            {direccion}
+                        </p>
+                    </div>
+                    <div className="Prueba__tags">
+                        <span>Atendido por</span>
+                        <span>{grupo_id}</span>
+                    </div>
+                </div>
             </div>
-            <div className="Prueba__card-content Prueba__job-card">
-                <img
-                    alt="Company logo"
-                    height="50"
-                    src="https://storage.googleapis.com/a1aa/image/hKmykEjVE4KXDxodnAuhYUcvBOVVt7f82HmUDjWX3lTJji0JA.jpg"
-                    width="50"
-                />
-                <div className="Prueba__description">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley.
-                    </p>
-                </div>
-                <div className="Prueba__tags">
-                    <span>Fulltime</span>
-                    <span>Remote</span>
-                    <span>Hourly</span>
-                </div>
-                <div className="Prueba__location">
-                    <hr />
-                    <span>Pennsylvania, USA</span>
-                </div>
-                <div className="Prueba__date">
-                    <hr />
-                    <span>2 days ago</span>
-                </div>
-                <button className="Prueba__apply-btn">Apply</button>
-            </div>
-        </div>
+        </div >
     )
 }

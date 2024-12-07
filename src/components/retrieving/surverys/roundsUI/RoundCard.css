@@ -1,17 +1,46 @@
-/* Estilos generales */
-
-.Prueba__container {
-    display: grid;
-    width: 100%;
-}
-
 .Prueba__card {
-    width: 60%;
-    justify-self: center;
+    width: 90%;
+    height: max-content;
+    display: grid;
+    place-self: center;
     border-radius: 10px;
-    box-shadow: rgba(10, 10, 10, 0.3) 0 0 2px 0;
     padding: 20px;
+    box-shadow: rgba(10, 10, 10, 0.4) 0 0 3px 0;
 }
+
+.Prueba__card__internalContainer {
+    width: 100%;
+    height: 100%;
+    place-self: center;
+}
+
+.Prueba__tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.Prueba__tags span {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fermin */
+
 
 .Prueba__card-x2 {
     grid-column: span 2;
@@ -22,9 +51,8 @@
 }
 
 .Prueba__card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr .4fr;
 }
 
 .Prueba__header-left {
@@ -145,20 +173,6 @@
     margin: 0;
     font-size: 14px;
     color: #555;
-}
-
-.Prueba__job-card .Prueba__tags {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.Prueba__job-card .Prueba__tags span {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 12px;
 }
 
 .Prueba__job-card .Prueba__location,

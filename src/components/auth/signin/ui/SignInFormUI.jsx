@@ -5,7 +5,7 @@ export default function SignInFormUI({ handleUserEmail, handleUserPass, onClickC
 		<div className='SignIn__Card'>
 			<div className='SignIn__inputGroup'>
 				<span className='SignIn__formTitle'>
-					Take into yout account
+					Accede a tu cuenta
 				</span>
 
 				<span className='SignIn__inputLine'>
@@ -19,17 +19,12 @@ export default function SignInFormUI({ handleUserEmail, handleUserPass, onClickC
 				</span>
 
 				<span className='SignIn__inputLine'>
-					<label className='SignIn__label'>{"  "}Repeat your password</label>
-					<input type='password' placeholder='S3CURE@PASSWORD' className='SignIn__input' />
-				</span>
-
-				<span className='SignIn__inputLine'>
 					<button 
 						type='button'
 						className='SignIn__formBtn'
 						onClick={onClickCallback}
 					>
-						crear cuenta
+						iniciar sesión
 					</button>
 				</span>
 

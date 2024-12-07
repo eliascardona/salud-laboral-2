@@ -21,6 +21,7 @@ export default function CustomSelect() {
     { label: 'Option 3', value: 'option3' },
   ]
   const setInputSelectedValue = useStore(state => state.setInputValue)
+  const selectedValue = useStore(state => state.inputValue)
 
   return (
     <CustomSelectHandler 
@@ -28,8 +29,8 @@ export default function CustomSelect() {
       value={selectedValue}
       onChange={(e) => {
         const inputSelectedValue = e.target.value || 'seleccionar'
-        console.log(inputSelectedValue)
         setInputSelectedValue(inputSelectedValue)
+        console.log('from zustand', selectedValue)
       }}
     />
   )

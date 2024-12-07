@@ -2,12 +2,12 @@ import { create } from 'zustand'
 
 const useStore = create(
     (set) => ({
-        inputValue: 0,
-        setIputValue: (newValue) =>
+        inputValue: 'seleccionar',
+        setInputValue: (newValue) => {
             set(state => ({
                 inputValue: newValue
-            })
-        ),
+            }))
+        }
     })
 )
 

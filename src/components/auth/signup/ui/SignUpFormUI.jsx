@@ -5,7 +5,7 @@ export default function SignUpFormUI({ handleCustomerName, handleUserEmail, hand
 		<div className='SignIn__Card'>
 			<div className='SignUp__inputGroup'>
 				<span className='SignUp__formTitle'>
-					Account info
+					Crea una cuenta nueva
 				</span>
 				<span className='SignUp__inputLine'>
 					<div className='SignUp__inputLineLy'>

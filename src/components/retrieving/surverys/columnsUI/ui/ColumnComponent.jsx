@@ -1,9 +1,13 @@
+import CustomSelect from '../../../../(commonLogicComponents)/CustomSelect'
 import RoundCard from '../../roundsUI/RoundCard'
 
-export default function ColumnComponent() {
+export default function ColumnComponent({ index, trustedData }) {
     return (
         <>
-            <RoundCard />
+        {
+            index === 0 && <CustomSelect />
+        }
+            <RoundCard {...trustedData} />
         </>
     )
 }
